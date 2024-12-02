@@ -87,7 +87,7 @@ mask = cv.inRange(webCam_hsv, lowerLimit, upperLimit)
     final_mask = Image.fromarray(mask)
     bbox = final_mask.getbbox()
 ```
-![mask](mask.gif)
+![mask](/GIFs/mask.gif)
 
 `bbox` give us the edges of the bounding box, so we will use that to get finish creating the bounding box on the webcam. 
 
@@ -99,4 +99,4 @@ if bbox is not None:
 
 cv.imshow("Frame", frame)
 ```
-![Frame](frame.gif)
+![Frame](/GIFs/frame.gif)
